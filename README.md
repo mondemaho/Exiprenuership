@@ -1,0 +1,157 @@
+<style>
+      <script src="script.js"></script>{
+        bookground-color:black;
+      }
+      h1{
+        color:lightblue;
+      }
+      </style>
+
+<body style="background: url('./)">
+  
+</body>
+      
+
+
+      <html>
+      <head>
+        <linkrel="stylesheet"
+          href="style.css"
+      </head>
+        </html>
+        
+        
+        <head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Exiprenuership</title>
+  
+  <h1>Exiprenuarship
+  </h1>
+  <h2>
+    Addicted to innovation
+  </h2>
+    
+  <head>
+  
+    <body>
+      <script>
+      let message='Exiprenuership'
+      document.write ('Exiprenuership is a mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
+      
+      </script>
+      
+      
+      
+      <html>
+<head>
+  <title>Exiprenuership</title>
+</head>
+
+<body>
+
+  <h1>Seminar</h1>
+
+  <button onclick="ShowSeminar()">Click Me</button>
+
+  <p id="Seminar"></p>
+
+  <script>
+    function ShowSeminar() {
+
+      let message = "Exipreniership is hosting a seminar on the 15 March 2026 " +
+      "at Science Stadium Wit\'s University.Build your consciousness, \"reader\'s are leader\'s\". " +
+      "We have different guest speaker\'s Vusi Thembekwayo,Emmanual Bonoko,DJ Sbu,Mbuso Khoza and More. they will be sharing empowering talk\'s to young BBBEE " +
+      "on how to get fund\'s, which document\'s are needed for applying, and what you need to start. " +
+      "They will be joined by the following FNO and ISP: MTN, Vodacom, Telkom, Openserve, Zoom Fibre and TT Connect.-Time:12:00am-17h00pm.All the student\'s are welcome!"
+
+      document.getElementById("Seminar").innerHTML =message;
+    }
+    
+  </script>
+</body>
+</html>
+    
+
+
+
+
+  <h2>Exam Planner</h2>
+
+  <table border="1" id="examTable">
+    <tr>
+      <th>Subject</th>
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  </table>
+
+  <br>
+  <button onclick="addExam()">Add Exam</button>
+
+  <script>
+    function showExams() {
+      document.getElementById("exams").innerHTML = "Prepare for your exam\'s buy using The following Tool!Alway\'s Remember The 5p\s Propare,Planning,Prevent's,Poor,Perfomance";
+    }
+
+    function addExam() {
+      let table = document.getElementById("examTable");
+      let row = table.insertRow();
+
+      let subject = row.insertCell(0);
+      let date = row.insertCell(1);
+      let time = row.insertCell(2);
+
+      subject.innerHTML = "Communication";
+      date.innerHTML = "2 March 2026";
+      time.innerHTML = "9:00 AM";
+    }
+  </script>
+
+</body>
+</html>
+     
+    
+      <html>
+<head>
+  <title>Exiprenuership </title>
+</head>
+
+<body>
+
+  <h1>Fests</h1>
+
+  <button onclick="showFests()">Click me</button>
+
+  <p id="fests"></p>
+  
+  <script>
+    function showFests() {
+
+      let message = "On the 19 April 2026, Exiprenuership is hosting an event " +
+      "at Wits Rugby Stadium. " +
+      "Artists: DJ Tira, Scotts Maphuma, Sjava, Black Coffee, Black Diamond, Mlindo the Vocalist, " +
+      "Shimza, Euphonic, Zakes Bantwini, DJ Naked, Solomzi, Kabza De Small,and Our best MC Mark khoza. " +
+      "" +
+      "You can also nominate yourself by sending a smaller nyana video and tell us why do you think you are the best DJ in the campus. " +
+      "You can share your video via our Facebook channel: Bookprenuership-M67 " +
+      "Or you can Post your video and tag us via Linkedin: Bookprenuership_Ubizolwami. " +
+      "Tickets are sold at Computicket. " +
+      "Damage: R150. Time: 13h00 till late. Drinks are sold at the venue.";
+
+      document.getElementById("fests").innerHTML = message;
+    }
+  </script>
+
+</body>
+</html>
+ 
+      <script>
+      function ('fest\s')
+  let age = 18;
+
+  if (age >= 18) {
+    console.log("You are an adult");
+  } else {
+    console.log("You are a minor");
+  }
+</script>
