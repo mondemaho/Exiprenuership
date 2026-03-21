@@ -43,8 +43,7 @@
       "on how to get fund\'s, which document\'s are needed to apply, and what do you need to start. " +
       "They will be joined by the following FNO and ISP: MTN, Vodacom, Telkom, Openserve, Zoom Fibre and TT Connect.-Time:12:00am-17h00pm.All the student\'s are welcome!"
 
-      document.getElementById("Seminar").innerHTML =message;
-    }
+      document.getElementById("Seminar").innerHTML =message;}
     
   </script>
 </body>
