@@ -15,7 +15,7 @@
     <body>
       <script>
       let message='Exiprenuership'
-      document.write ('Exiprenuership is a mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
+      document.write ('Exiprenuership It's a Mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
       
       </script>
       
@@ -112,11 +112,18 @@
       "Shimza, Euphonic, Zakes Bantwini, DJ Naked, Solomzi, Kabza De Small,and Our best MC Mark khoza. " +
       "" +
       "You can also nominate yourself by sending a smaller nyana video and tell us why do you think you are the best DJ in the campus. " +
-      "You can share your video via our Facebook channel: Bookprenuership-M67 " +
-      "Or you can Post your video and tag us via Linkedin: Bookprenuership_Ubizolwami. " +
-      "Tickets are sold at Computicket. " +
+      "You can share your video via our Facebook channel: Exiprenuership-M67 " +
+      "Or you can Post your video and tag us via Linkedin: Exiprenuership_Ubizolwami. " +
+      "Ticket\'s are available at Computicket. " +
       "Damage: R150. Time: 13h00 till late. Drinks are sold at the venue.";
+          
+let age = 18;
 
+  if (age >= 18) {
+    console.log("You are an adult");
+  } else {
+    console.log("You are a minor");
+  }
       document.getElementById("fests").innerHTML = message;
     }
   </script>
