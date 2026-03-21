@@ -48,10 +48,9 @@
     
   </script>
 </body>
-</html>
+</HTML>
     
 
-<!DOCTYPE html>
 <html>
 <head>
   <title>Exam Planner</title>
@@ -131,15 +130,7 @@
       "You can share your video via our Facebook channel: Exiprenuership-M67 " +
       "Or you can Post your video and tag us via Linkedin: Exiprenuership_Ubizolwami. " +
       "Ticket\'s are available at Computicket. " +
-      "Damage: R150. Time: 13h00 till late. Drinks are sold at the venue.";
-          
-let age = 18;
-
-  if (age >= 18) {
-    console.log("You are an adult");
-  } else {
-    console.log("You are a minor");
-  }
+      "Damage: R150. Time: 13h00 till late. Drinks are sold at the venue."
       document.getElementById("fests").innerHTML = message;
     }
   </script>
