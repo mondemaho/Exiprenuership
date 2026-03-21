@@ -37,7 +37,7 @@
   <script>
     function ShowSeminar() {
 
-      let message = "Exipreniership is hosting a seminar on the 15 March 2026 " +
+      let message = "Exiprenuership is hosting a seminar on the 15 March 2026 " +
       "at Science Stadium Wit\'s University.Build your consciousness, \"reader\'s are leader\'s\". " +
       "We have different guest speaker\'s Vusi Thembekwayo,Emmanual Bonoko,DJ Sbu,Mbuso Khoza and More. they will be sharing empowering talk\'s to young BBBEE " +
       "on how to get fund\'s, which document\'s are needed to apply, and what do you need to start. " +
@@ -134,7 +134,7 @@
     }
   </script>
 
-</body>
+
 
  
       
