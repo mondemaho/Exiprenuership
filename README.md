@@ -83,7 +83,7 @@
       subject.innerHTML = "Communication";
       date.innerHTML = "2 March 2026";
       time.innerHTML = "9:00 AM";
-    }
+    
         subject.innerHTML="Marketing"
         date.innerHTML:"21 March 2026";
         Time.innerHTML:"12:00pm";
@@ -95,7 +95,7 @@
 </html>
      
     
-      <html>
+      
 <head>
   <title>Exiprenuership </title>
 </head>
