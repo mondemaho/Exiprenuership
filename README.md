@@ -1,29 +1,8 @@
-<style>
-      <script src="script.js"></script>{
-        bookground-color:black;
-      }
-      h1{
-        color:lightblue;
-      }
-      </style>
 
-<body style="background: url('./)">
-  
-</body>
       
 
 
-      <html>
-      <head>
-        <linkrel="stylesheet"
-          href="style.css"
-      </head>
-        </html>
-        
-        
-        <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Exiprenuership</title>
+
   
   <h1>Exiprenuarship
   </h1>
