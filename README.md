@@ -51,11 +51,22 @@
 </html>
     
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam Planner</title>
+</head>
 
-
+<body>
 
   <h2>Exam Planner</h2>
 
+  <!-- Input fields -->
+  Subject: <input type="text" id="subject"><br><br>
+  Date: <input type="date" id="date"><br><br>
+  Time: <input type="time" id="time"><br><br>
+
+  <!-- Table -->
   <table border="1" id="examTable">
     <tr>
       <th>Subject</th>
@@ -66,29 +77,33 @@
 
   <br>
   <button onclick="addExam()">Add Exam</button>
-}
 
+  <script>
     function addExam() {
       let table = document.getElementById("examTable");
       let row = table.insertRow();
 
-      let subject = row.insertCell(0);
-      let date = row.insertCell(1);
-      let time = row.insertCell(2);
+      let subjectCell = row.insertCell(0);
+      let dateCell = row.insertCell(1);
+      let timeCell = row.insertCell(2);
 
-      subject.innerHTML = "Communication";
-      date.innerHTML = "2 March 2026";
-      time.innerHTML = "9:00 AM";
-    
-        subject.innerHTML="Marketing"
-        date.innerHTML:"21 March 2026";
-        Time.innerHTML:"12:00pm";
-        }
-        
+      // Get user input
+      let subject = document.getElementById("subject").value;
+      let date = document.getElementById("date").value;
+      let time = document.getElementById("time").value;
+
+      // Add to table
+      subjectCell.innerHTML = subject;
+      dateCell.innerHTML = date;
+      timeCell.innerHTML = time;
+    }
   </script>
 
 </body>
 </html>
+
+
+  
      
     
       
