@@ -66,11 +66,7 @@
 
   <br>
   <button onclick="addExam()">Add Exam</button>
-
-  <script>
-    function showExams() {
-      document.getElementById("exams").innerHTML = "Prepare for your exam\'s by using The following Tool!Alway\'s Remember The 5p\s Propare,Planning,Prevent's,Poor,Perfomance";
-    }
+}
 
     function addExam() {
       let table = document.getElementById("examTable");
