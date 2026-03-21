@@ -40,7 +40,7 @@
       let message = "Exipreniership is hosting a seminar on the 15 March 2026 " +
       "at Science Stadium Wit\'s University.Build your consciousness, \"reader\'s are leader\'s\". " +
       "We have different guest speaker\'s Vusi Thembekwayo,Emmanual Bonoko,DJ Sbu,Mbuso Khoza and More. they will be sharing empowering talk\'s to young BBBEE " +
-      "on how to get fund\'s, which document\'s are needed for applying, and what you need to start. " +
+      "on how to get fund\'s, which document\'s are needed to apply, and what do you need to start. " +
       "They will be joined by the following FNO and ISP: MTN, Vodacom, Telkom, Openserve, Zoom Fibre and TT Connect.-Time:12:00am-17h00pm.All the student\'s are welcome!"
 
       document.getElementById("Seminar").innerHTML =message;
@@ -69,7 +69,7 @@
 
   <script>
     function showExams() {
-      document.getElementById("exams").innerHTML = "Prepare for your exam\'s buy using The following Tool!Alway\'s Remember The 5p\s Propare,Planning,Prevent's,Poor,Perfomance";
+      document.getElementById("exams").innerHTML = "Prepare for your exam\'s by using The following Tool!Alway\'s Remember The 5p\s Propare,Planning,Prevent's,Poor,Perfomance";
     }
 
     function addExam() {
@@ -84,6 +84,11 @@
       date.innerHTML = "2 March 2026";
       time.innerHTML = "9:00 AM";
     }
+        subject.innerHTML="Marketing"
+        date.innerHTML:"21 March 2026";
+        Time.innerHTML:"12:00pm";
+        }
+        
   </script>
 
 </body>
