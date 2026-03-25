@@ -4,24 +4,26 @@
 
 
   
-  <h1>Exiprenuarship
+  <h1>Exiprenuership
   </h1>
   <h2>
     Addicted to innovation
   </h2>
     
   <head>
+
+      <body>
+  <script>
+  let message='Exiprenuership'
+  document.write ('Exiprenuership It's a Mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
   
-    <body>
-      <script>
-      let message='Exiprenuership'
-      document.write ('Exiprenuership It's a Mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
+  </script>
+  
+  
+  
+  <html>
       
-      </script>
-      
-      
-      
-      <html>
+
 <head>
   <title>Exiprenuership</title>
 </head>
