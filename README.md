@@ -1,4 +1,26 @@
+# Exiprenuership
 
+## What Is Exiprenuership?
+
+Exiprenuership is a mobile app that creates consciousness to all students about school events in different universities and TVET colleges.
+
+### Key Features
+- 📱 Mobile app for easy access
+- 🎓 Discover events across universities and TVET colleges
+- 🔔 Real-time notifications
+- 👥 Connect with students
+
+## How to Download & Use
+
+### Option 1: Download as ZIP
+1. Click the green **Code** button (top right)
+2. Click **Download ZIP**
+3. Extract and open the project
+
+### Option 2: Clone with Git
+```bash
+git clone https://github.com/mondemaho/your-repo-name
+cd your-repo-name
       
 
 
