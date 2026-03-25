@@ -10,21 +10,6 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 - 🔔 Real-time notifications
 - 👥 Connect with students
 
-## How to Download & Use
-
-### Option 1: Download as ZIP
-1. Click the green **Code** button (top right)
-2. Click **Download ZIP**
-3. Extract and open the project
-
-### Option 2: Clone with Git
-```bash
-git clone https://github.com/mondemaho/your-repo-name
-cd your-repo-name
-      
-
-
-
   
   <h1>Exiprenuership
   </h1>
