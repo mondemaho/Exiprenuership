@@ -10,6 +10,9 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 - 🔔 Real-time notifications
 - 👥 Connect with students
 
+<a href="https://github.com/mondemaho/Exiprenuership/discussions" target="_blank">
+  <button>Leave Feedback</button>
+</a>
   
   <h1>Exiprenuership
   </h1>
