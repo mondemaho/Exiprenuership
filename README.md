@@ -20,9 +20,11 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
   <head>
 
       <body>
-  <script>
-  let message='Exiprenuership'
-  document.write ('Exiprenuership It's a Mobile app that create consiousness to all the student\'s about school event\'s in Different University and Tvet college.')
+<h3>Feedback</h3>
+<p>Click below to leave a comment:</p>
+<a href="https://github.com/mondemaho/Exiprenuership/issues" target="_blank">
+  Leave Feedback
+</a>
   
   </script>
   
