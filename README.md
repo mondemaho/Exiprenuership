@@ -4,11 +4,13 @@
 
 Exiprenuership is a mobile app that creates consciousness to all students about school events in different universities and TVET colleges.
 
-### Key Features
-- 📱 Mobile app for easy access
-- 🎓 Discover events across universities and TVET colleges
-- 🔔 Real-time notifications
-- 👥 Connect with students
+.content {
+  color: black;
+}
+
+.header {
+  color: blue;
+}
 
   
   <h1>Exiprenuership
