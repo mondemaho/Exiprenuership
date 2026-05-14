@@ -109,7 +109,29 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 </body>
 </html>
 
+const subject = document.getElementById("subject");
+const time = document.getElementById("time");
+const date = document.getElementById("date");
 
+// Load saved data
+window.onload = () => {
+    subject.value = localStorage.getItem("subject") || "";
+    time.value = localStorage.getItem("time") || "";
+    date.value = localStorage.getItem("date") || "";
+};
+
+// Save data whenever user types/selects
+subject.addEventListener("input", () => {
+    localStorage.setItem("subject", subject.value);
+});
+
+time.addEventListener("input", () => {
+    localStorage.setItem("time", time.value);
+});
+
+date.addEventListener("input", () => {
+    localStorage.setItem("date", date.value);
+});
   
      
     
