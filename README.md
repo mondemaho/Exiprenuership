@@ -61,79 +61,48 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 </HTML>
     
 
-<html>
-<head>
-  <title>Exam Planner</title>
-</head>
+HTML
+<h2>Exam Planner</h2>
 
-<body>
+<table border="1" id="examTable">
+  <tr>
+    <th>Subject</th>
+    <th>Date</th>
+    <th>Time</th>
+  </tr>
+</table>
 
-  <h2>Exam Planner</h2>
+<br>
+<button onclick="addExam()">Add Exam</button>
 
-  <!-- Input fields -->
-  Subject: <input type="text" id="subject"><br><br>
-  Date: <input type="date" id="date"><br><br>
-  Time: <input type="time" id="time"><br><br>
+<script>
 
-  <!-- Table -->
-  <table border="1" id="examTable">
-    <tr>
-      <th>Subject</th>
-      <th>Date</th>
-      <th>Time</th>
-    </tr>
-  </table>
+window.onload = function () {
+  let savedData = localStorage.getItem("examData");
 
-  <br>
-  <button onclick="addExam()">Add Exam</button>
-
-  <script>
-    function addExam() {
-      let table = document.getElementById("examTable");
-      let row = table.insertRow();
-
-      let subjectCell = row.insertCell(0);
-      let dateCell = row.insertCell(1);
-      let timeCell = row.insertCell(2);
-
-      // Get user input
-      let subject = document.getElementById("subject").value;
-      let date = document.getElementById("date").value;
-      let time = document.getElementById("time").value;
-
-      // Add to table
-      subjectCell.innerHTML = subject;
-      dateCell.innerHTML = date;
-      timeCell.innerHTML = time;
-    }
-  </script>
-
-</body>
-</html>
-
-const subject = document.getElementById("subject");
-const time = document.getElementById("time");
-const date = document.getElementById("date");
-
-// Load saved data
-window.onload = () => {
-    subject.value = localStorage.getItem("subject") || "";
-    time.value = localStorage.getItem("time") || "";
-    date.value = localStorage.getItem("date") || "";
+  if (savedData) {
+    document.getElementById("examTable").innerHTML = savedData;
+  }
 };
 
-// Save data whenever user types/selects
-subject.addEventListener("input", () => {
-    localStorage.setItem("subject", subject.value);
-});
+function addExam() {
 
-time.addEventListener("input", () => {
-    localStorage.setItem("time", time.value);
-});
+  let subject = prompt("Enter Subject:");
+  let date = prompt("Enter Date:");
+  let time = prompt("Enter Time:");
 
-date.addEventListener("input", () => {
-    localStorage.setItem("date", date.value)
-});
+  let table = document.getElementById("examTable");
+
+  let row = table.insertRow();
+
+  row.insertCell(0).innerHTML = subject;
+  row.insertCell(1).innerHTML = date;
+  row.insertCell(2).innerHTML = time;
+
+  localStorage.setItem("examData", table.innerHTML);
+}
+
+</script>
   
      
     
