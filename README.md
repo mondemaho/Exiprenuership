@@ -60,7 +60,13 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 </body>
 </HTML>
     
-HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam Planner</title>
+</head>
+<body>
+
 <h2>Exam Planner</h2>
 
 <table border="1" id="examTable">
@@ -72,70 +78,48 @@ HTML
 </table>
 
 <br>
-
-<input id="subject" placeholder="Subject">
-<input id="date" type="date">
-<input id="time" type="time">
+<button onclick="addExam()">Add Exam</button>
 
 <script>
-let exams = JSON.parse(localStorage.getItem("examData")) || [];
 
 window.onload = function () {
-  renderTable();
+  let savedData = localStorage.getItem("examData");
+
+  if (savedData) {
+    document.getElementById("examTable").innerHTML = savedData;
+  }
 };
 
-// Auto-save function (runs every time input changes)
-function autoSave() {
-  localStorage.setItem("examData", JSON.stringify(exams));
+function saveData() {
+  let tableData = document.getElementById("examTable").innerHTML;
+  localStorage.setItem("examData", tableData);
 }
-
-document.getElementById("subject").addEventListener("input", autoSave);
-document.getElementById("date").addEventListener("input", autoSave);
-document.getElementById("time").addEventListener("input", autoSave);
 
 function addExam() {
-  let subject = document.getElementById("subject").value;
-  let date = document.getElementById("date").value;
-  let time = document.getElementById("time").value;
-
-  if (!subject || !date || !time) return;
-
-  exams.push({ subject, date, time });
-
-  autoSave();   // 🔥 saves instantly
-  renderTable();
-
-  // clear inputs
-  document.getElementById("subject").value = "";
-  document.getElementById("date").value = "";
-  document.getElementById("time").value = "";
-}
-
-// press Enter to add exam automatically
-document.addEventListener("keydown", function(e){
-  if (e.key === "Enter") addExam();
-});
-
-function renderTable() {
   let table = document.getElementById("examTable");
 
-  table.innerHTML = `
-    <tr>
-      <th>Subject</th>
-      <th>Date</th>
-      <th>Time</th>
-    </tr>
-  `;
+  let row = table.insertRow();
 
-  exams.forEach(e => {
-    let row = table.insertRow();
-    row.insertCell(0).innerText = e.subject;
-    row.insertCell(1).innerText = e.date;
-    row.insertCell(2).innerText = e.time;
-  });
+  let subjectCell = row.insertCell(0);
+  let dateCell = row.insertCell(1);
+  let timeCell = row.insertCell(2);
+
+  subjectCell.innerHTML =
+    '<input type="text" onkeyup="saveData()">';
+
+  dateCell.innerHTML =
+    '<input type="date" onchange="saveData()">';
+
+  timeCell.innerHTML =
+    '<input type="time" onchange="saveData()">';
+
+  saveData();
 }
+
 </script>
 
+</body>
+</html>
 
 <script>
 
