@@ -102,7 +102,7 @@ function addExam() {
   localStorage.setItem("examData", table.innerHTML);
 }
 
-</script>
+</script> 
   
      
     
