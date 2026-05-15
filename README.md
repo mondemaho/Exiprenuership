@@ -132,7 +132,7 @@ time.addEventListener("input", () => {
 });
 
 date.addEventListener("input", () => {
-    localStorage.setItem("date", date.value);
+    localStorage.setItem("date", date.value)
 });
   
      
