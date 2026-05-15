@@ -60,7 +60,6 @@ Exiprenuership is a mobile app that creates consciousness to all students about 
 </body>
 </HTML>
     
-
 HTML
 <h2>Exam Planner</h2>
 
@@ -73,36 +72,73 @@ HTML
 </table>
 
 <br>
-<button onclick="addExam()">Add Exam</button>
+
+<input id="subject" placeholder="Subject">
+<input id="date" type="date">
+<input id="time" type="time">
+
+<script>
+let exams = JSON.parse(localStorage.getItem("examData")) || [];
+
+window.onload = function () {
+  renderTable();
+};
+
+// Auto-save function (runs every time input changes)
+function autoSave() {
+  localStorage.setItem("examData", JSON.stringify(exams));
+}
+
+document.getElementById("subject").addEventListener("input", autoSave);
+document.getElementById("date").addEventListener("input", autoSave);
+document.getElementById("time").addEventListener("input", autoSave);
+
+function addExam() {
+  let subject = document.getElementById("subject").value;
+  let date = document.getElementById("date").value;
+  let time = document.getElementById("time").value;
+
+  if (!subject || !date || !time) return;
+
+  exams.push({ subject, date, time });
+
+  autoSave();   // 🔥 saves instantly
+  renderTable();
+
+  // clear inputs
+  document.getElementById("subject").value = "";
+  document.getElementById("date").value = "";
+  document.getElementById("time").value = "";
+}
+
+// press Enter to add exam automatically
+document.addEventListener("keydown", function(e){
+  if (e.key === "Enter") addExam();
+});
+
+function renderTable() {
+  let table = document.getElementById("examTable");
+
+  table.innerHTML = `
+    <tr>
+      <th>Subject</th>
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  `;
+
+  exams.forEach(e => {
+    let row = table.insertRow();
+    row.insertCell(0).innerText = e.subject;
+    row.insertCell(1).innerText = e.date;
+    row.insertCell(2).innerText = e.time;
+  });
+}
+</script>
+
 
 <script>
 
-window.onload = function () {
-  let savedData = localStorage.getItem("examData");
-
-  if (savedData) {
-    document.getElementById("examTable").innerHTML = savedData;
-  }
-};
-
-function addExam() {
-
-  let subject = prompt("Enter Subject:");
-  let date = prompt("Enter Date:");
-  let time = prompt("Enter Time:");
-
-  let table = document.getElementById("examTable");
-
-  let row = table.insertRow();
-
-  row.insertCell(0).innerHTML = subject;
-  row.insertCell(1).innerHTML = date;
-  row.insertCell(2).innerHTML = time;
-
-  localStorage.setItem("examData", table.innerHTML);
-}
-
-</script> 
   
      
     
